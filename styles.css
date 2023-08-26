@@ -1,7 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
 }
 
 .container {
@@ -15,8 +21,39 @@
 }
 
 .sidebar {
+  background-color: lightseagreen;
   grid-row: 1 / 3;
 }
+
+.sidebar .dashboard {
+  display: flex;
+  align-items: center;
+  color: #ffffff;
+}
+
+.dashboard img {
+  height: 1.5em;
+  width: auto;
+  margin-right: 8px;
+}
+
+.sidebar .side-content {
+
+}
+
+.side-content li a {
+  display: flex;
+  align-items: center;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.side-content li img {
+  height: 1.5em;
+  width: auto;
+  margin-right: 8px;
+}
+
 
 header {
   grid-column: 2 / 4;
